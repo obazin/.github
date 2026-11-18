@@ -8,10 +8,10 @@ Because this repository is public and named `.github`, it can also hold default 
 
 [`rulesets/default-branch.json`](rulesets/default-branch.json) targets each repository's default branch:
 
-- Changes go through a pull request with one approval. A new push dismisses earlier approvals, and every review thread must be resolved before merging.
+- Changes go through a pull request, so CI runs on them, but no approval is required. A new push dismisses earlier approvals, and every review thread must be resolved before merging.
 - Pull requests merge by squash only, and the history stays linear.
 - The branch cannot be force-pushed or deleted.
-- Repository admins can always bypass the rules. That is what lets me merge my own pull requests when I am the only maintainer, and push directly in an emergency.
+- Repository admins can always bypass the rules. That lets me push directly in an emergency.
 
 ## Required status checks
 
